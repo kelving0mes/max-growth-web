@@ -28,7 +28,7 @@ const config: Config = {
       dark: {
         colors: {
           primary: {
-            DEFAULT: "#db2777"
+            DEFAULT: "#FE654F"
           }
         }
       }

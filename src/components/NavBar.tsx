@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Popover, PopoverContent, PopoverTrigger } from "@nextui-org/react";
 import Image from "next/image";
+import { ShoppingCart } from "lucide-react";
 
 interface NavBarProps {
   active: "dashboard" | "categorias" | "carrinho";
@@ -28,8 +29,8 @@ export function NavBar(props: NavBarProps) {
       </ul>
       <div>
         <Popover showArrow placement="bottom-end">
-          <PopoverTrigger>
-            <Image src="/shopping-cart.svg" alt="ícone carrinho" width={30} height={30} />
+          <PopoverTrigger as="button">
+            <ShoppingCart size={36}/>
           </PopoverTrigger>
           <PopoverContent>
             <div className="p-4">
