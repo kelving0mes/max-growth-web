@@ -33,10 +33,6 @@ export function ProdutoItem(produto: Produto) {
                 <Icon name={produto.icone} />
                 <span>{produto.nome}</span>
             </div>
-            <button onClick={handleDelete}>Apagar</button>
-            <Link href={"/categorias/" + produto.id}>
-                editar
-            </Link>
             <DropdownActions 
                 onEdit={() => { console.log("editar ainda não implementado")}}
                 onDelete={handleDelete}

@@ -20,7 +20,7 @@ export async function update(prevState: any, formData: FormData){
         }
     }
 
-    const resp = await fetch("http://localhost:8080/categoria/" + id, options)
+    const resp = await fetch("http://localhost:8080/produto/" + id, options)
 
     if (resp.ok){
         redirect("/produtos")

@@ -7,7 +7,10 @@ export async function create(prevState: any, formData: FormData){
 
     const data = {
         nome: formData.get("nome"),
-        icone: formData.get("icone")
+        icone: formData.get("icone"),
+        quantidade: "1",
+        descricao: "produto teste"
+
     }
 
     const options = {
@@ -19,7 +22,7 @@ export async function create(prevState: any, formData: FormData){
         }
     }
 
-    const resp = await fetch("http://localhost:8080/categoria", options)
+    const resp = await fetch("http://localhost:8080/produto", options)
 
     if (resp.ok){
         redirect("/produtos")

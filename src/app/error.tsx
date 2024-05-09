@@ -16,7 +16,7 @@ export default function Error({
       <p>{error.name}</p>
       <p>{error.message}</p>
 
-      <Link href="/categorias">
+      <Link href="/produtos">
         <Button color="primary">voltar</Button>
       </Link>
     </main>
