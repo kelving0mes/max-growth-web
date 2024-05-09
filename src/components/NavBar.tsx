@@ -4,7 +4,7 @@ import Image from "next/image";
 import { ShoppingCart } from "lucide-react";
 
 interface NavBarProps {
-  active: "dashboard" | "categorias" | "carrinho";
+  active: "dashboard" | "produtos" | "carrinho";
 }
 
 export function NavBar(props: NavBarProps) {
@@ -20,8 +20,8 @@ export function NavBar(props: NavBarProps) {
         <li className={active == "dashboard" ? classActive : ""}>
           <Link href="/">Página Inicial</Link>
         </li>
-        <li className={active == "categorias" ? classActive : ""}>
-          <Link href="/categorias">Categorias</Link>
+        <li className={active == "produtos" ? classActive : ""}>
+          <Link href="/produtos">Produtos</Link>
         </li>
         <li className={active == "carrinho" ? classActive : ""}>
           <Link href="/carrinho">Carrinho</Link>

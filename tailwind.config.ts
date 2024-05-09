@@ -29,10 +29,14 @@ const config: Config = {
         colors: {
           primary: {
             DEFAULT: "#FE654F"
+          },
+          secondary:{
+            DEFAULT: "#FFFCFF"
+          }
           }
         }
       }
     }
-  })]
+  )]
 };
 export default config;

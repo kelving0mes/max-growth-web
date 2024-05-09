@@ -1,18 +1,18 @@
 import DropdownActions from "@/components/DropdownActions";
 import { Icon } from "@/components/Icon";
 
-interface Categoria {
+interface Produto {
     id: number
     nome: string
     icone: string
 }
 
-export function CategoriaItem(categoria: Categoria) {
+export function ProdutoItem(produto: Produto) {
     return (
         <div className="flex justify-between">
             <div className="flex gap-2">
-                <Icon name={categoria.icone} />
-                <span>{categoria.nome}</span>
+                <Icon name={produto.icone} />
+                <span>{produto.nome}</span>
             </div>
             <DropdownActions/>
         </div>
